@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+    <h2>Welcome</h2>
+
+    <h3>Balance: Rs. {{ balance }}</h3>
+
+    <form method="POST">
+        <input type="number" name="amount" placeholder="Enter Amount" required>
+
+        <button name="action" value="deposit">Deposit</button>
+        <button name="action" value="withdraw">Withdraw</button>
+    </form>
+
+    <h3>Transaction History</h3>
+    <div class="history">
+        {% for h in history %}
+            <p>{{ h }}</p>
+        {% endfor %}
+    </div>
+
+    <a href="/logout"><button>Logout</button></a>
+</div>
+
+</body>
+</html>

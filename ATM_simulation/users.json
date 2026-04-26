@@ -1,0 +1,10 @@
+{
+    "ayesha": {
+        "password": "1234",
+        "balance": 4700,
+        "history": [
+            "Deposited Rs. 2000",
+            "Withdrawn Rs. 2300"
+        ]
+    }
+}
